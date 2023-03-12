@@ -21,23 +21,41 @@
         <div class="container3">
             <h1>Om Oss</h1>
         </div>
-        <p>Bambio är ett UF-företag som erbjuder bambusugrör. Vi specialiserar oss inom närproducerat och miljövänligt bambu vilket gör oss unika. Här nedan ser du några exempel på våra produkter.</p>
+        <div class="text-container">
+            <p class="main-text">Bambio är ett UF-företag som erbjuder bambusugrör. <br> Vi specialiserar oss inom närproducerat och miljövänligt bambu vilket gör oss unika. <br> Här nedan ser du några exempel på våra produkter.</p>
+        </div>
         <div class="img">
-            <img src="sugrör1.png">
-            <img src="sugrör2.png">
+            <img class="product-img" src="sugrör1.png">
+            <img class="product-img" src="sugrör2.png">
         </div>
-    </div>
-    <div class="hero2">
-        <div class="container3">
-            <h1>Kontakt</h1>
-        </div>
-        <h2>Sociala medier: <a href="https://instagram.com/bambiouf/">Instagram</a></h2>
-        <h2>Vår email: bambiouf@gmail.com</h2>
     </div>
     <div class="hero2">
         <div class="container3">
             <h1>Shop</h1>
         </div>
+        <img class="renderer-img" src="bamboorender.png">
+        <div class="shop-text-container">
+            <p class="shop-text">Välkommen till vår Shop!</p>
+            <p class="shop-text">Du beställer genom att skriva hur många paket du vill ha.</p>
+            <p class="shop-text">Det gör du i ett meddelande under [Kontakta Oss]</p>
+            <p class="shop-text">Vårt Utbud:</p>
+            <p class="shop-text">1 paket innehåller 4 sugrör</p>
+            <p class="shop-text">49kr per paket</p>
+        </div>
+    </div>
+    <div class="hero2">
+        <div class="container3">
+            <h1>Kontakta Oss</h1>
+        </div>
+        <form action="https://formsubmit.co/bambiouf@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="https://bambio.se/thankyou.html">
+            <input type="hidden" name="_subject" value="Nytt meddelande från Bambio hemsidan!">
+            <input class="form-input" type="email" name="email" placeholder="Din email" required>
+            <input class="form-input" type="text" name="message" placeholder="Skriv ditt meddelande här" required>
+            <button class="form-button"type="submit">Skicka</button>
+       </form>
+        <h1>Sociala medier:</h1>
+        <p class="socials"><a href="https://instagram.com/bambiouf/">Instagram</a> <img class="logo-instagram" src="instagram.png"></p>
     </div>
 </body>
 </html>

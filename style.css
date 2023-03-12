@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .hero {
@@ -73,13 +74,18 @@
     height: 80px;
     font-size: 24px;
     margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 p {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 24px;
     width: 80vw;
-    margin-top: 2vw;
+    color: #3D2902;
+}
+
+h1 {
+    color: #3D2902;
 }
 
 a {
@@ -87,7 +93,7 @@ a {
     text-decoration: underline;
 }
 
-img {
+.product-img {
     width: 35vw;
     height: 35vw;
     object-fit: cover;
@@ -101,9 +107,106 @@ img {
     margin: 20px;
 }
 
+.text-container {
+    width: 70vw;
+    height: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-you {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-input {
+    background-color: rgba(255, 255, 255, 0.301);
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    border-width: 2px;
+    border-color: #3D2902;
+    padding: 10px;
+    font-weight: bold;
+    outline: none;
+}
+
+.form-input:focus {
+    background-color: white;
+}
+
+::placeholder {
+    color: #3D2902;
+    opacity: 1;
+}
+
+.form-button {
+    width: 200px;
+    height: 75px;
+    border-radius: 25px;
+    border-width: 2px;
+    border-color: #3D2902;
+    background-color: rgba(255, 255, 255, 0.301);
+    color: #3D2902;
+    font-weight: bold;
+    outline: none;
+}
+
+.form-button:hover {
+    cursor: pointer;
+}
+
+form {
+    margin-bottom: 10vh;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-instagram {
+    width: 48px;
+    height: 48px;
+}
+
+.shop-text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    text-shadow: 0px 0px 10px goldenrod;
+    background: -webkit-linear-gradient(orange, rgb(255, 166, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-inline: 20px;
+}
+
+.shop-text-container {
+    position: absolute;
+    left: 0;
+    top: 250vh;
+}
+
+@media (max-width: 1350px)
+{
+    .shop-text {
+        font-size: 16px;
+    }
+}
+
 @media (max-width: 500px)
 {
     .title {
         font-size: 96px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .renderer-img {
     }
 }
